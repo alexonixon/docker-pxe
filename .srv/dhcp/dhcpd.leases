@@ -11,10 +11,10 @@ lease 192.168.50.125 {
   set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
 }
 lease 192.168.50.126 {
-  starts 0 2016/07/31 12:08:43;
-  ends 0 2016/07/31 12:18:43;
-  tstp 0 2016/07/31 12:18:43;
-  cltt 0 2016/07/31 12:08:43;
+  starts 0 2016/07/31 12:28:12;
+  ends 0 2016/07/31 12:38:12;
+  tstp 0 2016/07/31 12:38:12;
+  cltt 0 2016/07/31 12:28:12;
   binding state free;
   hardware ethernet 08:00:27:28:68:cc;
   set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
@@ -22,9 +22,9 @@ lease 192.168.50.126 {
 server-duid "\000\001\000\001\037/\336L\010\000'\241\020\007";
 
 lease 192.168.50.126 {
-  starts 0 2016/07/31 12:28:12;
-  ends 0 2016/07/31 12:38:12;
-  cltt 0 2016/07/31 12:28:12;
+  starts 0 2016/07/31 13:01:32;
+  ends 0 2016/07/31 13:11:32;
+  cltt 0 2016/07/31 13:01:32;
   binding state active;
   next binding state free;
   rewind binding state free;
@@ -32,10 +32,10 @@ lease 192.168.50.126 {
   set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
 }
 lease 192.168.50.126 {
-  starts 0 2016/07/31 12:28:12;
-  ends 0 2016/07/31 12:38:12;
-  tstp 0 2016/07/31 12:38:12;
-  cltt 0 2016/07/31 12:28:12;
+  starts 0 2016/07/31 13:01:32;
+  ends 0 2016/07/31 13:11:32;
+  tstp 0 2016/07/31 13:11:32;
+  cltt 0 2016/07/31 13:01:32;
   binding state free;
   hardware ethernet 08:00:27:28:68:cc;
   set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
