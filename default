@@ -1,0 +1,66 @@
+# Меню, которое закачали
+default menu.c32
+ 
+# Заголовок и время на выбор пункта меню
+menu title PXE Network Boot Menu
+prompt 0
+timeout 1200
+ 
+# Первый пункт меню – загрузка с HD
+label Boot from first hard disk
+localboot 0x80
+ 
+############### OS DEBIAN ########
+# Меню с подменю
+menu begin
+menu title Debian
+ 
+# Переход в родительскую директорию (возврат к предыдущему меню)
+label ..
+menu exit
+ 
+# Список операционных систем для установки по PXE
+LABEL etch_i386_install
+kernel debian/etch/i386/linux
+append vga=normal initrd=debian/etch/i386/initrd.gz  --
+ 
+LABEL etch_i386_linux
+kernel debian/etch/i386/linux
+append vga=normal initrd=debian/etch/i386/initrd.gz  --
+ 
+LABEL etch_i386_expert
+kernel debian/etch/i386/linux
+append priority=low vga=normal initrd=debian/etch/i386/initrd.gz  --
+ 
+LABEL etch_i386_rescue
+kernel debian/etch/i386/linux
+append vga=normal initrd=debian/etch/i386/initrd.gz  rescue/enable=true --
+ 
+menu end
+##################################
+ 
+############### OS CENTOS ##########
+menu begin
+menu title Centos
+ 
+label ..
+menu exit
+ 
+LABEL Centos_5_i386
+kernel centos5/i386/vmlinuz
+append initrd=centos5/i386/initrd.img
+ 
+LABEL Centos_5_x86_64
+kernel centos5/x64/vmlinuz
+append initrd=centos5/x64/initrd.img
+ 
+LABEL Centos_6_i386
+kernel centos6/i386/vmlinuz
+append initrd=centos6/i386/initrd.img
+ 
+LABEL Centos_6_x86_64
+kernel centos6/x64/vmlinuz
+append initrd=centos6/x64/initrd.img
+ 
+menu end
+##################################

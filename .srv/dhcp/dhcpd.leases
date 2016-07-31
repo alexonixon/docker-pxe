@@ -11,32 +11,41 @@ lease 192.168.50.125 {
   set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
 }
 lease 192.168.50.126 {
-  starts 0 2016/07/31 12:28:12;
-  ends 0 2016/07/31 12:38:12;
-  tstp 0 2016/07/31 12:38:12;
-  cltt 0 2016/07/31 12:28:12;
+  starts 0 2016/07/31 16:30:53;
+  ends 0 2016/07/31 16:40:53;
+  tstp 0 2016/07/31 16:40:53;
+  cltt 0 2016/07/31 16:30:53;
   binding state free;
   hardware ethernet 08:00:27:28:68:cc;
   set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
 }
-server-duid "\000\001\000\001\037/\336L\010\000'\241\020\007";
+lease 192.168.50.127 {
+  starts 0 2016/07/31 17:44:44;
+  ends 0 2016/07/31 17:54:44;
+  tstp 0 2016/07/31 17:54:44;
+  cltt 0 2016/07/31 17:44:44;
+  binding state free;
+  hardware ethernet 08:00:27:01:d4:d0;
+  set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
+}
+server-duid "\000\001\000\001\0370\343\210\010\000'\241\020\007";
 
-lease 192.168.50.126 {
-  starts 0 2016/07/31 13:01:32;
-  ends 0 2016/07/31 13:11:32;
-  cltt 0 2016/07/31 13:01:32;
+lease 192.168.50.127 {
+  starts 0 2016/07/31 18:01:08;
+  ends 0 2016/07/31 18:11:08;
+  cltt 0 2016/07/31 18:01:08;
   binding state active;
   next binding state free;
   rewind binding state free;
-  hardware ethernet 08:00:27:28:68:cc;
+  hardware ethernet 08:00:27:01:d4:d0;
   set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
 }
-lease 192.168.50.126 {
-  starts 0 2016/07/31 13:01:32;
-  ends 0 2016/07/31 13:11:32;
-  tstp 0 2016/07/31 13:11:32;
-  cltt 0 2016/07/31 13:01:32;
+lease 192.168.50.127 {
+  starts 0 2016/07/31 18:01:08;
+  ends 0 2016/07/31 18:11:08;
+  tstp 0 2016/07/31 18:11:08;
+  cltt 0 2016/07/31 18:01:08;
   binding state free;
-  hardware ethernet 08:00:27:28:68:cc;
-  set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
+  hardware ethernet 08:00:27:01:d4:d0;
+  set vendor-class-identifier = "anaconda-Linux 4.2.3-300.fc23.x86_64 x86_64";
 }

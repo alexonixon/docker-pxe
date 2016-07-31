@@ -1,40 +1,13 @@
-# Меню, которое закачали
-default menu.c32
- 
-# Заголовок и время на выбор пункта меню
-menu title PXE Network Boot Menu
-prompt 0
-timeout 1200
- 
-# Первый пункт меню – загрузка с HD
-label Boot from first hard disk
-localboot 0x80
- 
-############### OS DEBIAN ########
-# Меню с подменю
-menu begin
-menu title Debian
- 
-# Переход в родительскую директорию (возврат к предыдущему меню)
-label ..
-menu exit
- 
-# Список операционных систем для установки по PXE
-LABEL etch_i386_install
-kernel debian/etch/i386/linux
-append vga=normal initrd=debian/etch/i386/initrd.gz  --
- 
-LABEL etch_i386_linux
-kernel debian/etch/i386/linux
-append vga=normal initrd=debian/etch/i386/initrd.gz  --
- 
-LABEL etch_i386_expert
-kernel debian/etch/i386/linux
-append priority=low vga=normal initrd=debian/etch/i386/initrd.gz  --
- 
-LABEL etch_i386_rescue
-kernel debian/etch/i386/linux
-append vga=normal initrd=debian/etch/i386/initrd.gz  rescue/enable=true --
- 
-menu end
-##################################
+default vesamenu.c32
+prompt 1
+timeout 600
+
+label linux
+menu label ^Install Fedora Workstation 23 64-bit
+menu default
+kernel f23/vmlinuz
+append initrd=f23/initrd.img inst.stage2=http://download.fedoraproject.org/pub/fedora/linux/releases/23/Workstation/x86_64/os/ ip=dhcp
+
+label local
+menu label Boot from ^local drive
+localboot 0xffff

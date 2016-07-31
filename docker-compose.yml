@@ -5,12 +5,14 @@ services:
       network_mode: "host"
       privileged: true
 #      ports:
-#          - "69:69"
+#         - "69:69"
       volumes:
            - "./.srv/tftpboot:/images"
     dhcp_server:
        image: alexonixon/dhcpd
        network_mode: "host"
        privileged: true
+#       ports:
+#          - "67:67"
        volumes:
          - "./.srv/dhcp:/data"
