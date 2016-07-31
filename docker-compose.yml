@@ -1,0 +1,16 @@
+version: '2'
+services:
+    ftp_server:
+      image: alexonixon/tftpd-hpa
+      network_mode: "host"
+      privileged: true
+#      ports:
+#          - "69:69"
+      volumes:
+           - "./.srv/tftpboot:/images"
+    dhcp_server:
+       image: alexonixon/dhcpd
+       network_mode: "host"
+       privileged: true
+       volumes:
+         - "./.srv/dhcp:/data"

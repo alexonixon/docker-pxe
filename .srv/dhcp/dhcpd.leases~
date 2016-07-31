@@ -1,0 +1,61 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.3.3
+
+lease 192.168.50.125 {
+  starts 0 2016/07/31 01:32:44;
+  ends 0 2016/07/31 01:42:44;
+  tstp 0 2016/07/31 01:42:44;
+  cltt 0 2016/07/31 01:32:44;
+  binding state free;
+  hardware ethernet 08:00:27:7a:af:ad;
+  set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
+}
+lease 192.168.50.126 {
+  starts 0 2016/07/31 02:37:50;
+  ends 0 2016/07/31 02:47:50;
+  tstp 0 2016/07/31 02:47:50;
+  cltt 0 2016/07/31 02:37:50;
+  binding state free;
+  hardware ethernet 08:00:27:28:68:cc;
+  set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
+}
+server-duid "\000\001\000\001\037/\336L\010\000'\241\020\007";
+
+lease 192.168.50.126 {
+  starts 0 2016/07/31 11:35:59;
+  ends 0 2016/07/31 11:45:59;
+  cltt 0 2016/07/31 11:35:59;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 08:00:27:28:68:cc;
+  set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
+}
+lease 192.168.50.126 {
+  starts 0 2016/07/31 11:35:59;
+  ends 0 2016/07/31 11:45:59;
+  tstp 0 2016/07/31 11:45:59;
+  cltt 0 2016/07/31 11:35:59;
+  binding state free;
+  hardware ethernet 08:00:27:28:68:cc;
+  set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
+}
+lease 192.168.50.126 {
+  starts 0 2016/07/31 12:08:43;
+  ends 0 2016/07/31 12:18:43;
+  cltt 0 2016/07/31 12:08:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 08:00:27:28:68:cc;
+  set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
+}
+lease 192.168.50.126 {
+  starts 0 2016/07/31 12:08:43;
+  ends 0 2016/07/31 12:18:43;
+  tstp 0 2016/07/31 12:18:43;
+  cltt 0 2016/07/31 12:08:43;
+  binding state free;
+  hardware ethernet 08:00:27:28:68:cc;
+  set vendor-class-identifier = "PXEClient:Arch:00000:UNDI:002001";
+}
